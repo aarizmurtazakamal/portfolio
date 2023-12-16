@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name's Bio</title>
-  <link rel="stylesheet" href="styles_1.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_1.css') }}">
 </head>
 <body>
   <header>
     <div class="profile2-img"> 
-        <img src="image2-new.jpg" alt="Aariz" class="profile2-img">   
+        <img src="{{ url_for('static', filename='images/image2-new.jpg') }}" alt="Aariz" class="profile2-img">   
     </div>
-      <img src="image.jpg" alt="Aariz" class="profile-img">
+      <img src="{{ url_for('static', filename='images/image.jpg') }}" alt="Aariz" class="profile-img">
       <h1>Aariz Murtaza Kamal</h1>
       <p>Devops Engineer, Infrastructure Engineer</p>
       <p>Follow me on social media:</p>
